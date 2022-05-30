@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-<!--    <div id="nav">-->
-<!--      <router-link to="/">Home</router-link>-->
-<!--      <router-link to="/about">About</router-link>-->
-<!--      <router-link to="/portfolio">Portfolio</router-link>-->
-<!--      <router-link to="/contact">Contact</router-link>-->
-<!--    </div>-->
+    <Navbar />
     <router-view />
+    <Footer />
   </div>
 </template>
+
+<script>
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+export default {
+  components: { Footer, Navbar }
+}
+
+</script>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Italiana&display=swap');
@@ -23,7 +28,18 @@ html, body, div {
   box-sizing: border-box;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 a {
   text-decoration: none; /* no underline */
+}
+
+ul {
+  list-style: none;
+}
+li {
+  margin-bottom: .5rem;
 }
 </style>

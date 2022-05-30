@@ -4,12 +4,12 @@
       <h1>Christoper Riley</h1>
       <p>Writer | Editor</p>
     </div>
-    <div class="test">
+    <div class="header__content">
       <div class="header__links">
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/portfolio">Portfolio</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <router-link to="/" class="link">Home</router-link>
+        <router-link to="/about" class="link">About</router-link>
+        <router-link to="/portfolio" class="link">Portfolio</router-link>
+        <router-link to="/contact" class="link">Contact</router-link>
       </div>
       <div class="header__image">
         <img src="../assets/main.jpg" class="image" alt="" />
@@ -34,10 +34,25 @@ export default {
   &__title {
   }
 
+  &__content {
+    position: relative;
+  }
   &__links {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 25rem;
+    top: 2rem;
+    z-index: 2;
+
+    & a {
+      padding-bottom: 1rem;
+      text-transform: uppercase;
+      color: #000
+    }
   }
+
+
 
   &__image img {
     clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
