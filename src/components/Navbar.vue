@@ -1,9 +1,9 @@
 <template>
-  <header :class="{ 'scrolled-nav': saveScrollPosition }">
+  <header :class="{ 'scrolled-nav': scrolledNav }">
     <nav>
       <div class="branding">
         <router-link class="link" :to="{ name: 'Home' }"
-          >Christopher Riley</router-link
+          ><h1>Christopher Riley</h1></router-link
         >
       </div>
       <ul v-show="!mobile" class="navigation">
@@ -23,7 +23,7 @@
       </ul>
       <div class="icon">
         <i
-          @click="toggleMobile"
+          @click="toggleMobileNav"
           v-show="mobile"
           class="fa-solid fa-bars"
           :class="{ 'icon-active': mobileNav }"
@@ -57,11 +57,41 @@ export default {
   name: "Navbar",
   data() {
     return {
-      scrollPosition: null,
+      scrolledNav: null,
       mobile: true,
       mobileNav: null,
       windowWidth: null,
     };
+  },
+  created() {
+    window.addEventListener("resize", this.checkScreen);
+    this.checkScreen();
+  },
+  methods: {
+    toggleMobileNav() {
+      this.mobileNav = !this.mobileNav;
+    },
+    updateScroll() {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 50) {
+        this.scrolledNav = true;
+        return;
+      }
+      this.scrolledNav = false;
+    },
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      if (this.windowWidth <= 750) {
+        this.mobile = true;
+        return;
+      }
+      this.mobile = false;
+      this.mobileNav = false;
+      return;
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
   },
 };
 </script>
@@ -77,6 +107,7 @@ header {
 
   nav {
     display: flex;
+    position: relative;
     flex-direction: row;
     padding: 12px 0;
     transition: 0.5s ease all;
@@ -114,6 +145,87 @@ header {
     .branding {
       display: flex;
       align-items: center;
+
+      a {
+        font-size: 20px;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 24px;
+      height: 100%;
+
+      i {
+        cursor: pointer;
+        font-size: 24px;
+        transition: 0.8s ease all;
+      }
+    }
+
+    .icon-active {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-nav {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+      max-width: 250px;
+      height: 100%;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+
+      li {
+        margin-left: 0;
+
+        .link {
+          color: #000;
+        }
+      }
+    }
+
+    .mobile-nav-enter-active,
+    .mobile-nav-leave-active {
+      transition: 1s ease all;
+    }
+
+    .mobile-nav-enter-from,
+    .mobile-nav-leave-to {
+      transform: translateX(-250px);
+    }
+
+    .mobile-nav-enter-to {
+      transform: translateX(0);
+    }
+  }
+}
+.scrolled-nav {
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  nav {
+    padding: 8px 0;
+
+    .branding a {
+      font-size: 15px;
+    }
+
+    i {
+      font-size: 15px;
     }
   }
 }
