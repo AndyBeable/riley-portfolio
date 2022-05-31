@@ -1,20 +1,20 @@
 <template>
   <div class="header">
-    <div class="header__title">
-      <h1>Christoper Riley</h1>
-      <p>Writer | Editor</p>
-    </div>
-    <div class="header__content">
-      <div class="header__links">
-        <router-link to="/" class="link">Home</router-link>
-        <router-link to="/about" class="link">About</router-link>
-        <router-link to="/portfolio" class="link">Portfolio</router-link>
-        <router-link to="/contact" class="link">Contact</router-link>
-      </div>
-      <div class="header__image">
-        <img src="../assets/main.jpg" class="image" alt="" />
-      </div>
-    </div>
+<!--    <div class="header__title">-->
+<!--      <h1>Christoper Riley</h1>-->
+<!--      <p>Writer | Editor</p>-->
+<!--    </div>-->
+<!--    <div class="header__content">-->
+<!--      <div class="header__links">-->
+<!--        <router-link to="/" class="link">Home</router-link>-->
+<!--        <router-link to="/about" class="link">About</router-link>-->
+<!--        <router-link to="/portfolio" class="link">Portfolio</router-link>-->
+<!--        <router-link to="/contact" class="link">Contact</router-link>-->
+<!--      </div>-->
+<!--      <div class="header__image">-->
+<!--        <img src="../assets/main.jpg" class="image" alt="" />-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </template>
 

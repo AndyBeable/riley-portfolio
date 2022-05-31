@@ -2,15 +2,15 @@
   <div id="app">
     <Navbar />
     <router-view />
-    <Footer />
+<!--    <Footer />-->
   </div>
 </template>
 
 <script>
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 export default {
-  components: { Footer, Navbar }
+  components: { Navbar }
 }
 
 </script>
@@ -19,13 +19,14 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Italiana&display=swap');
 
 #app {
-  font-family: 'Italiana', Helvetica, Arial, sans-serif;
+  min-height: 100vh;
 }
 
-html, body, div {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Italiana', Helvetica, Arial, sans-serif;
 }
 
 p {
