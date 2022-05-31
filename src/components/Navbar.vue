@@ -32,6 +32,11 @@
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li>
+            <router-link class="link" :to="{ name: 'Home' }"
+            >Home</router-link
+            >
+          </li>
+          <li>
             <router-link class="link" :to="{ name: 'Portfolio' }"
               >Portfolio</router-link
             >
@@ -98,7 +103,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: #fff;
+  background-color: transparent;
   z-index: 99;
   width: 100%;
   position: fixed;
@@ -137,9 +142,10 @@ header {
       padding-bottom: 4px;
       border-bottom: 1px solid transparent;
 
-      &:hover {
-        color: #00afea;
-        border-color: #00afea;
+      @media screen and (min-width: 750px) {
+        &:hover {
+          border-color: #000;
+        }
       }
     }
     .branding {
@@ -147,7 +153,7 @@ header {
       align-items: center;
 
       a {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
 

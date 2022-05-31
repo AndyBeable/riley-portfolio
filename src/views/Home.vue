@@ -1,43 +1,20 @@
 <template>
   <div class="header">
-<!--    <div class="header__title">-->
+<!--    <div v-show="mobile" class="header__title">-->
 <!--      <h1>Christoper Riley</h1>-->
 <!--      <p>Writer | Editor</p>-->
 <!--    </div>-->
-<!--    <div class="header__content">-->
+    <div class="header__content">
 <!--      <div class="header__links">-->
 <!--        <router-link to="/" class="link">Home</router-link>-->
 <!--        <router-link to="/about" class="link">About</router-link>-->
 <!--        <router-link to="/portfolio" class="link">Portfolio</router-link>-->
 <!--        <router-link to="/contact" class="link">Contact</router-link>-->
 <!--      </div>-->
-<!--      <div class="header__image">-->
-<!--        <img src="../assets/main.jpg" class="image" alt="" />-->
-<!--      </div>-->
-<!--    </div>-->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate deleniti dolore, ea earum error ex facere incidunt, ipsam iure mollitia nostrum odio, praesentium quia quis quo unde voluptate. Excepturi?</p>
+      <div class="header__image">
+        <img src="../assets/main.jpg" class="image" alt="" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -78,11 +55,12 @@ export default {
 
 
   &__image img {
-    clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
-  }
+    height: auto;
+    max-width: 100%;
 
-  .test {
-    display: flex;
+    @media screen and (min-width: 750px) {
+      //clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
+    }
   }
 }
 </style>

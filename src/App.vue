@@ -2,15 +2,20 @@
   <div id="app">
     <Navbar />
     <router-view />
-<!--    <Footer />-->
+    <Footer />
   </div>
 </template>
 
 <script>
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 export default {
-  components: { Navbar }
+  components: { Navbar, Footer },
+  data() {
+    return {
+      isMobile: true,
+    }
+  }
 }
 
 </script>
