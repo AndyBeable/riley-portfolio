@@ -1,9 +1,9 @@
 <template>
   <div class="header">
-    <!--    <div v-show="mobile" class="header__title">-->
-    <!--      <h1>Christoper Riley</h1>-->
-    <!--      <p>Writer | Editor</p>-->
-    <!--    </div>-->
+    <div class="header__title">
+      <h1>Christoper Riley</h1>
+      <p>Writer | Editor</p>
+    </div>
     <div class="header__content">
       <!--      <div class="header__links">-->
       <!--        <router-link to="/" class="link">Home</router-link>-->
@@ -30,8 +30,17 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__title {
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    z-index: 2;
+
+    & h1 {
+      margin-bottom: 1rem;
+    }
   }
 
   &__content {

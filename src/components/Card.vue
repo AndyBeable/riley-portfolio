@@ -29,21 +29,28 @@ export default {
 
   @media screen and (min-width: 750px) {
     & ul {
-    display: flex;
-    flex-direction: row;
+      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 5rem;
+    }
+
+    & li {
+
     }
   }
 }
 
-
 .content__container {
   text-align: center;
   text-transform: uppercase;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
 
   & img {
-    max-width: 300px;
-    height: auto;
+    width: 400px;
+    height: 400px;
     margin-bottom: 1rem;
   }
 }

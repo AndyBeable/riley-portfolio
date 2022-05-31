@@ -3,7 +3,7 @@
     <nav>
       <div class="branding">
         <router-link class="link" :to="{ name: 'Home' }"
-          ><h1>Christopher Riley</h1></router-link
+          ><h1 v-show="mobile">Christopher Riley</h1></router-link
         >
       </div>
       <ul v-show="!mobile" class="navigation">
