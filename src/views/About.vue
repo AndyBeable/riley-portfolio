@@ -29,6 +29,11 @@ export default {
 .about {
   width: 75%;
   margin: 0 auto;
+  padding: 7rem 0;
+
+  p {
+    margin-bottom: 3rem;
+  }
 }
 
 </style>

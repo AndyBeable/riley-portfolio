@@ -38,8 +38,14 @@ p {
   line-height: 1.5rem;
 }
 
-a {
-  text-decoration: none; /* no underline */
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 ul {

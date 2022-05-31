@@ -55,7 +55,7 @@ export default {
 
 
   &__image img {
-    height: auto;
+    height: 100vh;
     max-width: 100%;
 
     @media screen and (min-width: 750px) {

@@ -26,7 +26,8 @@
           @click="toggleMobileNav"
           v-show="mobile"
           class="fa-solid fa-bars"
-          :class="{ 'icon-active': mobileNav }"
+          :class="[
+            'icon-active', mobileNav ? 'fa-xmark' : 'fa-bars' ]"
         ></i>
       </div>
       <transition name="mobile-nav">
