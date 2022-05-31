@@ -11,11 +11,18 @@ import Winston from "../assets/winston.jpg";
 import Melo from "../assets/melo.jpg";
 import Ruel from "../assets/ruel.jpg";
 import YP from "../assets/yp.jpg";
-import NWA from "../assets/one-four-nwa.jpg"
-import Onefour from "../assets/one-four-return.jpg"
-import Metaverse from "../assets/metaverse.jpg"
-import esports from "../assets/esports.jpg"
-import Fashion from '../assets/fashion-week.jpg'
+import NWA from "../assets/one-four-nwa.jpg";
+import Onefour from "../assets/one-four-return.jpg";
+import Metaverse from "../assets/metaverse.jpg";
+import esports from "../assets/esports.jpg";
+import Fashion from "../assets/fashion-week.jpg";
+import Mullet from '../assets/mullet.jpg'
+import Hairline from '../assets/hairline.jpg'
+import MasterChef from '../assets/masterchef.jpg'
+import Jewellery from '../assets/jewellery.jpg'
+import Humbug from '../assets/humbug.jpg'
+
+
 
 export default {
   components: {
@@ -90,6 +97,31 @@ export default {
           link: "https://www.menshealth.com.au/the-26-most-influential-men-in-health-and-fitness/",
           image: YP,
         },
+        {
+          title: "Protecting the mullet",
+          link: "https://taustralia.com.au/why-we-must-protect-the-mullet-at-all-costs/",
+          image: Mullet,
+        },
+        {
+          title: "Me and my hairline",
+          link: "https://taustralia.com.au/how-to-tackle-a-receding-hairline-and-baldy-go-no-longer/",
+          image: Hairline,
+        },
+        {
+          title: "Humbug no more",
+          link: "https://taustralia.com.au/its-beginning-to-look-a-lot-like/",
+          image: Humbug,
+        },
+        {
+          title: "My MasterChef makeover",
+          link: "https://taustralia.com.au/how-masterchef-inspired-a-not-so-complete-makeover/",
+          image: MasterChef,
+        },
+        {
+          title: "Embracing fine jewellery",
+          link: "https://taustralia.com.au/why-dont-more-men-embrace-fine-jewellery/",
+          image: Jewellery,
+        },
       ],
     };
   },
@@ -101,7 +133,5 @@ export default {
   padding: 7rem 0;
   width: 80%;
   margin: 0 auto;
-
-  }
-
+}
 </style>
