@@ -16,13 +16,25 @@ import Onefour from "../assets/one-four-return.jpg";
 import Metaverse from "../assets/metaverse.jpg";
 import esports from "../assets/esports.jpg";
 import Fashion from "../assets/fashion-week.jpg";
-import Mullet from '../assets/mullet.jpg'
-import Hairline from '../assets/hairline.jpg'
-import MasterChef from '../assets/masterchef.jpg'
-import Jewellery from '../assets/jewellery.jpg'
-import Humbug from '../assets/humbug.jpg'
-
-
+import Mullet from "../assets/mullet.jpg";
+import Hairline from "../assets/hairline.jpg";
+import MasterChef from "../assets/masterchef.jpg";
+import Jewellery from "../assets/jewellery.jpg";
+import Humbug from "../assets/humbug.jpg";
+import Gillette from '../assets/gilette.jpg'
+import Ugg from '../assets/ugg.jpg'
+import Melrose from '../assets/melrose.jpg'
+import Raised from '../assets/raised.jpg'
+import Ask from '../assets/ask.jpg'
+import Home1 from '../assets/mh-1.jpg'
+import Home2 from '../assets/mh-2.jpg'
+import Home3 from '../assets/mh-3.jpg'
+import Basquait from '../assets/basquiat.jpg'
+import Gucci from '../assets/gucci.jpg'
+import Ideas from '../assets/ideas.jpg'
+import June from '../assets/june.jpg'
+import March from '../assets/march.jpg'
+import January from '../assets/january.jpg'
 
 export default {
   components: {
@@ -121,6 +133,76 @@ export default {
           title: "Embracing fine jewellery",
           link: "https://taustralia.com.au/why-dont-more-men-embrace-fine-jewellery/",
           image: Jewellery,
+        },
+        {
+          title: "Gillette",
+          link: "https://taustralia.com.au/why-dont-more-men-embrace-fine-jewellery/",
+          image: Gillette,
+        },
+        {
+          title: "Ugg",
+          link: "https://www.gq.com.au/style/best-buys/road-test-this-is-what-happens-when-you-let-a-gq-editor-wear-pvccovered-ugg-boots/news-story/088e5a7e17ee8dca51077ff76d9a5a89?amp",
+          image: Ugg,
+        },
+        {
+          title: "Melrose",
+          link: "https://www.menshealth.com.au/tried-and-tested-2-mh-editors-put-melrose-mct-oil-to-trial/",
+          image: Melrose,
+        },
+        {
+          title: "The Men Who Raised Us",
+          link: "https://podcasts.apple.com/au/podcast/the-men-who-raised-us/id1478050943",
+          image: Raised,
+        },
+        {
+          title: "Ask Mens Health",
+          link: "https://podcasts.apple.com/au/podcast/ask-mens-health/id1562623995",
+          image: Ask,
+        },
+        {
+          title: "At Home with Mens Health, ep1",
+          link: "https://podcasts.apple.com/au/podcast/ask-mens-health/id1562623995",
+          image: Home1,
+        },
+        {
+          title: "At Home with Mens Health, ep2",
+          link: "https://podcasts.apple.com/au/podcast/ask-mens-health/id1562623995",
+          image: Home2,
+        },
+        {
+          title: "At Home with Mens Health, ep3",
+          link: "https://podcasts.apple.com/au/podcast/ask-mens-health/id1562623995",
+          image: Home3,
+        },
+        {
+          title: "How to style Coachs Basquiat collection",
+          link: "https://www.facebook.com/VogueAustralia/videos/397296911282585/",
+          image: Basquait,
+        },
+        {
+          title: "Getting ready for Gucci",
+          link: "https://youtu.be/iQIUJfCoTSI",
+          image: Gucci,
+        },
+        {
+          title: "GQ Big Ideas Summit",
+          link: "https://youtu.be/452zgRyAm-0",
+          image: Ideas,
+        },
+        {
+          title: "Mens Health, June 2021 issue",
+          link: "https://www.menshealth.com.au/how-to-dress-for-confusing-weather/",
+          image: June,
+        },
+        {
+          title: "Mens Health, March 2021 issue",
+          link: " https://www.menshealth.com.au/you-need-these-street-inspired-clothes-in-your-closet/",
+          image: March,
+        },
+        {
+          title: "Mens Health, January 2022 issue",
+          link: "https://www.menshealth.com.au/summer-style-inspiration-for-men-2022/",
+          image: January,
         },
       ],
     };
