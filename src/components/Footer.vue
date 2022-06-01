@@ -1,18 +1,26 @@
 <template>
   <footer class="footer">
-<p>Copyright© 2022 Christoper Riley </p>
+    <div class="footer__content">
+      <span>CR.</span>
+      <p>Copyright© 2022 Christoper Riley</p>
+    </div>
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
 };
 </script>
 
-<style scoped>
-footer {
+<style lang="scss" scoped>
+.footer__content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    font-size: 30px;
+  }
 }
 </style>

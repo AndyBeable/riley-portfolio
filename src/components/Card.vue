@@ -22,6 +22,9 @@ export default {
 
 <style lang="scss" scoped>
 .card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   & li {
     margin-bottom: 2rem;
@@ -35,10 +38,6 @@ export default {
       justify-content: space-around;
       gap: 5rem;
     }
-
-    & li {
-
-    }
   }
 }
 
@@ -49,8 +48,8 @@ export default {
   padding: 1rem;
 
   & img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 1rem;
   }
 }

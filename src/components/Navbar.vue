@@ -3,13 +3,20 @@
     <nav>
       <div class="branding">
         <router-link class="link" :to="{ name: 'Home' }"
-          ><h1 v-show="mobile">Christopher Riley</h1></router-link
+          ><h1 v-if="!isHomepage">Christopher Riley</h1></router-link
         >
       </div>
       <ul v-show="!mobile" class="navigation">
         <li>
           <router-link class="link" :to="{ name: 'Portfolio' }"
-            >Portfolio</router-link
+            >PORTFOLIO
+            <ul class="navigation__dropdown">
+              <li>Magazines</li>
+              <li>Podcasts</li>
+              <li>Videos</li>
+              <li>Creative direction</li>
+              <li>Books</li>
+            </ul></router-link
           >
         </li>
         <li>
@@ -26,16 +33,13 @@
           @click="toggleMobileNav"
           v-show="mobile"
           class="fa-solid fa-bars"
-          :class="[
-            'icon-active', mobileNav ? 'fa-xmark' : 'fa-bars' ]"
+          :class="['icon-active', mobileNav ? 'fa-xmark' : 'fa-bars']"
         ></i>
       </div>
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li>
-            <router-link class="link" :to="{ name: 'Home' }"
-            >Home</router-link
-            >
+            <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
           </li>
           <li>
             <router-link class="link" :to="{ name: 'Portfolio' }"
@@ -72,6 +76,11 @@ export default {
   created() {
     window.addEventListener("resize", this.checkScreen);
     this.checkScreen();
+  },
+  computed: {
+    isHomepage() {
+      return this.$route.name === "Home";
+    },
   },
   methods: {
     toggleMobileNav() {
@@ -118,7 +127,7 @@ header {
     padding: 12px 0;
     transition: 0.5s ease all;
     width: 90%;
-    margin: 0 auto;
+    margin: 1rem auto;
 
     @media (min-width: 1140px) {
       max-width: 1140px;
@@ -138,7 +147,7 @@ header {
     }
 
     .link {
-      font-size: 14px;
+      font-size: 18px;
       transition: 0.5s ease all;
       padding-bottom: 4px;
       border-bottom: 1px solid transparent;
@@ -163,6 +172,19 @@ header {
       align-items: center;
       flex: 1;
       justify-content: flex-end;
+
+      &__dropdown {
+        visibility: hidden;
+        opacity: 1;
+
+        //display: none;
+      }
+
+      //&__dropdown:hover {
+      //  visibility: visible;
+      //  opacity: 1;
+      //  display: block;
+      //}
     }
 
     .icon {
@@ -225,8 +247,6 @@ header {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
   nav {
-    padding: 8px 0;
-
     .branding a {
       font-size: 15px;
     }
