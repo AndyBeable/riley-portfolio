@@ -1,5 +1,8 @@
 <template>
-  <div class="magazines">
+  <div class="magazines features">
+    <div class="features__header">
+      <h2>Magazines</h2>
+    </div>
     <Card :profiles="profiles" />
   </div>
 </template>
@@ -144,9 +147,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.magazines {
-  padding: 7rem 0;
-  width: 80%;
-  margin: 0 auto;
-}
+
 </style>

@@ -1,5 +1,8 @@
 <template>
-  <div class="podcasts">
+  <div class="podcasts features">
+    <div class="features__header">
+      <h2>Podcasts</h2>
+    </div>
     <Card :profiles="profiles" />
   </div>
 </template>

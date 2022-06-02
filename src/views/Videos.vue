@@ -1,5 +1,8 @@
 <template>
-  <div class="videos">
+  <div class="videos features">
+    <div class="features__header">
+      <h2>Videos</h2>
+    </div>
     <Card :profiles="profiles" />
   </div>
 </template>

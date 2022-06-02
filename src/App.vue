@@ -54,4 +54,24 @@ ul {
 li {
   margin-bottom: .5rem;
 }
+
+.features {
+  padding: 7rem 0;
+  width: 80%;
+  margin: 0 auto;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    h2 {
+      text-transform: uppercase;
+      border-bottom: 1px solid #000;
+      padding-bottom: 1rem;
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+
 </style>

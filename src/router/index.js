@@ -5,6 +5,7 @@ import Portfolio from "../views/Portfolio.vue";
 import Magazines from "../views/Magazines.vue";
 import Podcasts from "../views/Podcasts.vue";
 import Videos from "../views/Videos.vue";
+import Creative from "../views/Creative.vue";
 import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
 
@@ -35,6 +36,11 @@ const routes = [
     path: "/videos",
     name: "Videos",
     component: Videos,
+  },
+  {
+    path: "/creative-direction",
+    name: "Creative",
+    component: Creative,
   },
   {
     path: "/about",
