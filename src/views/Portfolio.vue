@@ -1,30 +1,40 @@
 <template>
   <div class="portfolio">
-    <div class="portfolio__tile">
-      <div class="portfolio__title">
-        <h2>Magazines</h2>
+    <router-link :to="{ name: 'Magazines' }">
+      <div class="portfolio__tile">
+        <div class="portfolio__title">
+          <h2>Magazines</h2>
+        </div>
       </div>
-    </div>
-    <div class="portfolio__tile">
-      <div class="portfolio__title">
-        <h2>Podcasts</h2>
+    </router-link>
+    <router-link :to="{ name: 'Podcasts' }">
+      <div class="portfolio__tile">
+        <div class="portfolio__title">
+          <h2>Podcasts</h2>
+        </div>
       </div>
-    </div>
-    <div class="portfolio__tile">
-      <div class="portfolio__title">
-        <h2>Videos</h2>
+    </router-link>
+    <router-link :to="{ name: 'Videos' }">
+      <div class="portfolio__tile">
+        <div class="portfolio__title">
+          <h2>Videos</h2>
+        </div>
       </div>
-    </div>
-    <div class="portfolio__tile">
-      <div class="portfolio__title">
-        <h2>Creative Direction</h2>
+    </router-link>
+    <router-link :to="{ name: 'Creative' }">
+      <div class="portfolio__tile">
+        <div class="portfolio__title">
+          <h2>Creative Direction</h2>
+        </div>
       </div>
-    </div>
-    <div class="portfolio__tile">
-      <div class="portfolio__title">
-        <h2>Books</h2>
+    </router-link>
+    <router-link :to="{ name: 'Books' }">
+      <div class="portfolio__tile">
+        <div class="portfolio__title">
+          <h2>Books</h2>
+        </div>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -39,7 +49,7 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio {
-  padding: 8rem 0;
+  padding: 10rem 0;
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -48,12 +58,28 @@ export default {
 
   @media screen and (min-width: 750px) {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 5rem;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    @media screen and (min-width: 750px) {
+      flex-wrap: wrap;
+
+    }
+  }
+
+  &__tile:hover {
+   transform: scale(1.1);
+    transition: .5s ease all;
   }
 
   &__title {

@@ -29,7 +29,7 @@ const routes = [
   },
   {
     path: "/podcasts",
-    name: "Postcasts",
+    name: "Podcasts",
     component: Podcasts,
   },
   {
