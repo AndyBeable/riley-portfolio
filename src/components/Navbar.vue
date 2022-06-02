@@ -10,14 +10,14 @@
         <li>
           <router-link class="link" :to="{ name: 'Portfolio' }"
             >PORTFOLIO
-            <ul class="navigation__dropdown">
-              <li>Magazines</li>
-              <li>Podcasts</li>
-              <li>Videos</li>
-              <li>Creative direction</li>
-              <li>Books</li>
-            </ul></router-link
-          >
+<!--            <ul class="navigation__dropdown">-->
+<!--              <li>Magazines</li>-->
+<!--              <li>Podcasts</li>-->
+<!--              <li>Videos</li>-->
+<!--              <li>Creative direction</li>-->
+<!--              <li>Books</li>-->
+<!--            </ul>-->
+          </router-link>
         </li>
         <li>
           <router-link class="link" :to="{ name: 'About' }">About</router-link>
@@ -173,20 +173,22 @@ header {
       flex: 1;
       justify-content: flex-end;
 
-      &__dropdown {
-        visibility: hidden;
-        opacity: 1;
-
-        //display: none;
-      }
-
-      //&__dropdown:hover {
-      //  visibility: visible;
+      //&__dropdown {
       //  opacity: 1;
-      //  display: block;
+      //  background-color: red;
+      //  position: absolute;
+      //  top: 5rem;
+      //  //visibility: hidden;
+      //}
+      //
+      //&__dropdown ul:hover {
+      //
       //}
     }
 
+    navigation:first-child {
+      background-color: red;
+    }
     .icon {
       display: flex;
       align-items: center;
