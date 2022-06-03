@@ -6,6 +6,7 @@ import Magazines from "../views/Magazines.vue";
 import Podcasts from "../views/Podcasts.vue";
 import Videos from "../views/Videos.vue";
 import Creative from "../views/Creative.vue";
+import Books from "../views/Books.vue";
 import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
 
@@ -41,6 +42,11 @@ const routes = [
     path: "/creative-direction",
     name: "Creative",
     component: Creative,
+  },
+  {
+    path: "/books",
+    name: "Books",
+    component: Books,
   },
   {
     path: "/about",
