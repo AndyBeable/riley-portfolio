@@ -47,9 +47,8 @@ export default {
       .sub__title {
         display: initial;
       }
-      }
+    }
   }
-
 
   &__content {
     position: relative;
@@ -70,8 +69,8 @@ export default {
   }
 
   &__image img {
-    height: 100%;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 
     @media screen and (min-width: 750px) {
       clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
