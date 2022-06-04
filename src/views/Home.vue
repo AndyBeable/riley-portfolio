@@ -69,8 +69,8 @@ export default {
   }
 
   &__image img {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
 
     @media screen and (min-width: 750px) {
       clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
