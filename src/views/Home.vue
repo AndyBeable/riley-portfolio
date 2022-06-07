@@ -4,6 +4,20 @@
       <div class="header__title">
         <h1>Christoper Riley</h1>
         <span class="sub__title">Writer | Editor</span>
+        <div class="social__links">
+          <a
+            href="https://www.linkedin.com/in/christopher-riley-47a55180/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin" />
+          </a>
+          <a href="https://www.instagram.com/yeayea.nah/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:christopherriley87@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
       </div>
       <div class="header__image">
         <img src="../assets/main.jpg" class="image" alt="" />
@@ -68,9 +82,20 @@ export default {
     }
   }
 
+  .social__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+
+    & a {
+      margin-right: 1.2rem;
+    }
+  }
+
   &__image img {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 
     @media screen and (min-width: 750px) {
       clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
