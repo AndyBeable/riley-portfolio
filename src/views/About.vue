@@ -17,6 +17,20 @@
       press runs to support new releases; and producing engaging copywriting
       content for a range of brands.
     </p>
+    <div class="social__links">
+      <a
+        href="https://www.linkedin.com/in/christopher-riley-47a55180/"
+        target="_blank"
+      >
+        <i class="fa-brands fa-linkedin" />
+      </a>
+      <a href="https://www.instagram.com/yeayea.nah/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="mailto:christopherriley87@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -38,6 +52,17 @@ export default {
 
   p {
     margin-bottom: 3rem;
+  }
+
+  .social__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+
+    & a {
+      margin-right: 1.2rem;
+    }
   }
 }
 </style>
