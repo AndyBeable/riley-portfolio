@@ -29,6 +29,22 @@
 <script>
 export default {
   name: "Home",
+  data() {
+    return {
+      mobile: true
+    }
+  },
+  methods: {
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      if (this.windowWidth <= 750) {
+        this.mobile = true;
+        return;
+      }
+      this.mobile = false;
+      return;
+    },
+  },
 };
 </script>
 

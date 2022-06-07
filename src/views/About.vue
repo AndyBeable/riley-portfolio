@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <img src="../assets/main-2.jpg" alt="">
     <p>
       Christopher is a British-American writer and editor based in Sydney.
       Formerly deputy editor of GQ Australia, Christopher has worked on staff at
@@ -35,12 +34,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  img {
-    width: 400px;
-    height: 450px;
-    margin-bottom: 5rem;
-  }
+  
   p {
     margin-bottom: 3rem;
   }

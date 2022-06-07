@@ -8,19 +8,12 @@
       </div>
       <ul v-show="!mobile" class="navigation">
         <li>
-          <router-link class="link" :to="{ name: 'Portfolio' }"
-            >PORTFOLIO
-<!--            <ul class="navigation__dropdown">-->
-<!--              <li>Magazines</li>-->
-<!--              <li>Podcasts</li>-->
-<!--              <li>Videos</li>-->
-<!--              <li>Creative direction</li>-->
-<!--              <li>Books</li>-->
-<!--            </ul>-->
-          </router-link>
+          <router-link class="link" :to="{ name: 'About' }">About</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: 'About' }">About</router-link>
+          <router-link class="link" :to="{ name: 'Portfolio' }"
+            >PORTFOLIO
+          </router-link>
         </li>
         <li>
           <router-link class="link" :to="{ name: 'Contact' }"
@@ -42,13 +35,13 @@
             <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
           </li>
           <li>
-            <router-link class="link" :to="{ name: 'Portfolio' }"
-              >Portfolio</router-link
+            <router-link class="link" :to="{ name: 'About' }"
+              >About</router-link
             >
           </li>
           <li>
-            <router-link class="link" :to="{ name: 'About' }"
-              >About</router-link
+            <router-link class="link" :to="{ name: 'Portfolio' }"
+              >Portfolio</router-link
             >
           </li>
           <li>
