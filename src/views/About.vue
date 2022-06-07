@@ -3,10 +3,11 @@
     <p>
       Christopher is a British-American writer and editor based in Sydney.
       Formerly deputy editor of GQ Australia, Christopher has worked on staff at
-      Men’s Health, and appeared in Harper’s Bazaar , Vogue Australia and T
-      Australia: The New York Times Style Magazine, where he worked as a
-      columnist. His first book will be published by Penguin Random House
-      Australia in October 2022.
+      Men’s Health, and appeared in <em>Harper’s Bazaar</em> ,
+      <em>Vogue Australia</em> and<em
+        >T Australia: The New York Times Style Magazine</em
+      >, where he worked as a columnist. His first book will be published by
+      Penguin Ra ndom House Australia in October 2022.
     </p>
     <p>
       His work includes writing and editing profiles and in-depth magazine
@@ -34,10 +35,9 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   p {
     margin-bottom: 3rem;
   }
 }
-
 </style>
