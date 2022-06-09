@@ -52,6 +52,10 @@
     margin: 3rem 0;
   }
 
+  ul {
+    list-style: initial;
+  }
+
   .social__links {
     display: flex;
     align-items: center;

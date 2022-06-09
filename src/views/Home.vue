@@ -4,19 +4,21 @@
       <div class="header__title">
         <h1>Christoper Riley</h1>
         <span class="sub__title">Writer | Editor</span>
-        <div class="social__links">
-          <a
-            href="https://www.linkedin.com/in/christopher-riley-47a55180/"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin" />
-          </a>
-          <a href="https://www.instagram.com/yeayea.nah/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="mailto:christopherriley87@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
+        <div v-if="!mobile">
+          <div class="social__links">
+            <a
+              href="https://www.linkedin.com/in/christopher-riley-47a55180/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin" />
+            </a>
+            <a href="https://www.instagram.com/yeayea.nah/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:christopherriley87@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
         </div>
       </div>
       <div class="header__image">
@@ -31,8 +33,8 @@ export default {
   name: "Home",
   data() {
     return {
-      mobile: true
-    }
+      mobile: false,
+    };
   },
   methods: {
     checkScreen() {
@@ -45,6 +47,10 @@ export default {
       return;
     },
   },
+  mounted() {
+    window.addEventListener("resize", this.checkScreen);
+    this.checkScreen();
+  }
 };
 </script>
 
